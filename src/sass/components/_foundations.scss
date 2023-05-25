@@ -1,0 +1,73 @@
+.foundation {
+    background: radial-gradient(
+      183.6% 183.01% at 59.76% -23.42%,
+      #4f2ee8 18.03%,
+      #ffffff 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1);
+  border-radius: 16px;
+
+  padding-inline: 40px;
+  padding-top: 24px;
+  padding-bottom: 20px;
+  color: var(--main-text-color-dark-bg);
+  text-align: center;
+  max-width: 335px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 356px;
+    padding-bottom: 24px;
+  }
+}
+.foundation--title {
+    display: flex;
+  margin-bottom: 40px;
+}
+.foundation--title__text {
+    font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  margin-right: 12px;
+}
+.foundation--title__icon {
+    fill: var(--main-text-color-dark-bg);
+}
+.swiper {
+    width: 275px;
+    height: 188px;
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      height: 292px;
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 276px;
+      margin-bottom: 40px;
+    }
+}
+.swiper--wrapper {
+}
+.foundation--list {
+}
+.foundation--nextSlide {
+    width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 38px;
+    height: 38px;
+  }
+}
+.foundation--nextSlide__icon {
+    fill: var(--accent-color);
+    position: relative;
+  top: 3px;
+}
