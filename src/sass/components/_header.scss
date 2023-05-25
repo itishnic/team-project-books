@@ -1,0 +1,26 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #111111;
+  border-radius: 0px 0px 8px 8px;
+
+  .dark & {
+    border: 1.5px solid #ffffff;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.header__logo-img {
+  background: url('./../images/logo_big.svg');
+  width: 86px;
+  height: 28px;
+
+  .dark & {
+    background: url('./../images/logo_big-dark.svg');
+  }
+}
