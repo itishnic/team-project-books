@@ -1,10 +1,6 @@
-
-
-//  отрисовка списка поддержки
-
+import { charityItems } from './foundation-data.js';
 import Swiper from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import { charityItems } from './foundation-data';
 
 
 const charityEl = document.querySelector('.swiper-wrapper');
@@ -14,7 +10,7 @@ const charityItemsHtml = charityItems.map(({ url, img, imgRetina, title }, index
       target="_blank"
       rel="noopener noreferrer nofollow">
     <span class="charity_index">${(index + 1).toString().padStart(2, "0")}</span>
-     <img class="foundation_logo"  srcset = "
+     <img class="charity_logo"  srcset = "
         ${img} 1x,
         ${imgRetina} 2x
         "
@@ -40,7 +36,7 @@ const swiper = new Swiper('.swiper', {
   }
 });
 
-const nextBtnEl = document.querySelector('.foundation--nextSlide');
+const nextBtnEl = document.querySelector('.charity-next-slide');
 nextBtnEl.addEventListener('click', () => {
   if (swiper.activeIndex + swiper.loopedSlides + 1 > swiper.slides.length) {
     swiper.slideToLoop(0)
