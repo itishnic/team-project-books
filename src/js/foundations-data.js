@@ -18,7 +18,7 @@ import sprytula1x from '../images/foundations/sprytula@1x.png';
 import sprytula2x from '../images/foundations/sprytula@2x.png';
 
 
-export const charityItems = [
+export const foundationData = [
   {
     title: 'Save the Children',
     url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
