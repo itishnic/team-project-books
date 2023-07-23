@@ -2,7 +2,7 @@ export const fundArray = [
   {
     title: 'Save the Children',
     url: 'https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis',
-    img: require('../images/'),
+    img: require('../'),
     img2: require('../../images/support/fund1@2x.png'),
   },
   {
