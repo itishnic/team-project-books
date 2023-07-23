@@ -2,10 +2,10 @@
 import {FoundationItem} from './foundations-markup';
 import {foundationData} from './foundations-data';
 import Swiper from 'swiper';
-import 'swiper/swiper-bundle.min.css';
+// import 'swiper/swiper-bundle.min.css';
 
 const foundationListEl = document.querySelector('.foundation--list');
-const btnSwiperEl = document.querySelector('.foundation--list');
+const btnSwiperEl = document.querySelector('.swiper-button-next');
 
 
 

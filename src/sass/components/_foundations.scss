@@ -1,136 +1,110 @@
 .foundations {
-  background: radial-gradient(
-      183.6% 183.01% at 59.76% -23.42%,
-      #4f2ee8 18.03%,
-      #ffffff 100%
-    )
-    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1);
-  border-radius: 16px;
-
-  padding-inline: 40px;
-  padding-top: 24px;
-  padding-bottom: 20px;
-  color: var(--main-text-color-dark-bg);
-  text-align: center;
   max-width: 335px;
+  height: 352px;
+  padding: 24px 40px 20px;
+  // margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 16px;
+  box-shadow: 0px 10px 10px rgba(245, 245, 247, 0.1);
+  background: radial-gradient(
+    183.6% 183.01% at 59.76% -23.42%,
+    #4f2ee8 18.03%,
+    #ffffff 100%
+  );
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 14px;
+    max-width: none;
+    width: 335px;
+    height: 472px;
+    padding: 24px 40px 14px;
   }
-  @media screen and (min-width: 1280px) {
+
+  @media screen and (min-width: 1440px) {
     width: 356px;
-    padding-bottom: 24px;
+    height: 490px;
+    padding: 24px 40px;
   }
 }
 
-.shopping-list-sidebar > .foundations {
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-}
 .foundations--title {
-  display: flex;
   margin-bottom: 40px;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
+
 .foundations--title__text {
+  font-weight: 700;
   font-size: 28px;
-  line-height: 1.14;
-  letter-spacing: -0.04em;
-  margin-right: 12px;
+  line-height: calc(32 / 28);
+  color: #ffffff;
 }
+
 .foundations--title__icon {
-  fill: var(--main-text-color-dark-bg);
+  fill: #ffffff;
 }
+
 .swiper {
-  width: 275px;
   height: 188px;
   margin-bottom: 16px;
+
+  overflow: hidden;
+
   @media screen and (min-width: 768px) {
     height: 292px;
     margin-bottom: 32px;
   }
-  @media screen and (min-width: 1280px) {
-    width: 276px;
+
+  @media screen and (min-width: 1440px) {
     margin-bottom: 40px;
   }
 }
 
-.charity-item.swiper-slide {
-  width: 275px;
-  height: 32px;
-}
-
-.charity-link {
-  display: flex;
-  align-items: center;
-}
-
-.charity_index {
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.04em;
-  margin-right: 14px;
-  @media screen and (min-width: 768px) {
-    margin-right: 16px;
-  }
-}
-
-.charity_logo {
-  height: 32px;
-  filter: brightness(0) invert(1);
-}
-.swiper-wrapper {
-}
 .foundation--list {
+  display: flex;
+  flex-direction: column;
 }
-.foundation--next-slide {
+
+.foundation--list__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: #ffffff;
+}
+
+.foundation--link img {
+  height: 32px;
+  width: auto;
+
+  filter: grayscale(100%) invert(50%) brightness(200%);
+}
+
+.support__btn {
   width: 32px;
   height: 32px;
-  background: #ffffff;
-  border-radius: 50%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: none;
-  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
 
   @media screen and (min-width: 768px) {
     width: 38px;
     height: 38px;
   }
 }
+
 .foundations--next-slide__icon {
-  fill: var(--accent-color);
-  position: relative;
-  top: 3px;
-}
-.tooltip {
-  position: relative;
-  display: inline-block;
-  // border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: var(--accent-color);
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-  font-size: 14px;
-
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 100000;
-  bottom: 5%;
-  left: 70%;
-  margin-left: -60px;
-
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
+  fill: #4f2ee8;
 }
