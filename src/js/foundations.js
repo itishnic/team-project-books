@@ -1,13 +1,10 @@
-
-import {FoundationItem} from './foundations-markup';
-import {foundationData} from './foundations-data';
+import { FoundationItem } from './foundations-markup';
+import { foundationData } from './fund-array';
 import Swiper from 'swiper';
 // import 'swiper/swiper-bundle.min.css';
 
 const foundationListEl = document.querySelector('.foundation--list');
 const btnSwiperEl = document.querySelector('.swiper-button-next');
-
-
 
 let position = 0;
 
@@ -23,22 +20,21 @@ const markupSetFunds = foundationData
   })
   .join('');
 
-  foundationListEl.innerHTML = markupSetFunds;
+foundationListEl.innerHTML = markupSetFunds;
 
+const swiper = new Swiper('.swiper', {
+  direction: 'vertical',
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  rewind: true,
 
-  const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
-    spaceBetween: 20,
-    slidesPerView: 'auto',
-    rewind: true,
-  
-    navigation: {
-      nextEl: '.swiper-button-next',
-    },
-  });
-  
-  swiper.update();
-  
-  btnSwiperEl.addEventListener('click', () => {
-    swiper.slideNext();
-  });
+  navigation: {
+    nextEl: '.swiper-button-next',
+  },
+});
+
+swiper.update();
+
+btnSwiperEl.addEventListener('click', () => {
+  swiper.slideNext();
+});
