@@ -1,5 +1,5 @@
 export const FoundationItem = ({ title, url, img, img2 }, position) =>
-  `<div class="foundation--list__item swiper--slide">
+  `<li class="foundation--list__item swiper-slide">
 <p class="foundation--position">${position}</p>
 <a class="foundation--link" href="${url}" target="_blank" rel="noopener noreferrer nofollow">
 <img
@@ -10,4 +10,4 @@ export const FoundationItem = ({ title, url, img, img2 }, position) =>
   loading="lazy"
 />
 </a>
-</div>`;
+</li>`;
