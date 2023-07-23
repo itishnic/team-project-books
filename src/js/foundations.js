@@ -1,5 +1,5 @@
 import { FoundationItem } from './foundations-markup';
-import { foundationData } from './fund-array';
+import { fundArray } from './fund-array';
 import Swiper from 'swiper';
 // import 'swiper/swiper-bundle.min.css';
 
@@ -12,7 +12,7 @@ const addLeadingZero = value => {
   return String(value).padStart(2, '0');
 };
 
-const markupSetFunds = foundationData
+const markupSetFunds = fundArray
   .map((el, i) => {
     position = addLeadingZero(i + 1);
 
