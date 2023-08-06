@@ -1,5 +1,5 @@
 import { getBooksByCategory } from './get-books-by-category';
-// import { createBookMarkup } from './create-book-markup';
+import { createBookMarkup } from './create-book-markup';
 // import { createMessageMarkup } from './message-markup';
 // import showHideLoader from './loader';
 
