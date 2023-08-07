@@ -1,28 +1,29 @@
-import { getCategoryList } from './get-category-list';
+// import { getCategoryList } from './get-category-list';
 
-const categoriesList = document.querySelector('.categories__list');
+// const categoriesList = document.querySelector('.categories__list');
 
-async function showCategories() {
-  try {
-    const response = await getCategoryList();
-    const categories = response.data;
-    const markup = categories
-      .map(category => createCategoryItemMarkup(category.list_name))
-      .join(' ');
+// async function showCategories() {
+//   try {
+//     const response = await getCategoryList();
+//     const categories = response.data;
+//     const markup = categories
+//       .map(category => createCategoryItemMarkup(category.list_name))
+//       .join(' ');
 
-    categoriesList.insertAdjacentHTML('beforeend', markup);
-  } catch (error) {
-    console.log(error);
-  }
-}
-showCategories();
+//     categoriesList.insertAdjacentHTML('beforeend', markup);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
 
-function createCategoryItemMarkup(category) {
-  return `
-    <li class="categories__item">
-      <a class="categories__link js-click-link" data-value="${category}">
-        ${category}
-       </a>
-    </li>
-  `;
-}
+// function createCategoryItemMarkup(category) {
+//   return `
+//     <li class="categories__item">
+//       <a class="categories__link js-click-link" data-value="${category}">
+//         ${category}
+//        </a>
+//     </li>
+//   `;
+// }
+
+// showCategories();
