@@ -1,7 +1,7 @@
 import Notiflix from 'notiflix';
 import { fetchBooks } from './fetchBooks';
 // import { handleModalWindow } from '../modal';
-import { drawCategory } from './get-category-list';
+import { drawCategory } from './books-by-category';
 // import { Spiner } from '../spiner-loader';
 // import debounce from 'lodash.debounce';
 

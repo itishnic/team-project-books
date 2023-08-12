@@ -1,9 +1,9 @@
-import { FoundationItem } from './foundations-markup';
+import { markupCardFund } from './foundations-markup';
 import { fundArray } from './fund-array';
 import Swiper from 'swiper';
 // import 'swiper/swiper-bundle.min.css';
 
-const foundationListEl = document.querySelector('.foundation--list');
+const supportListEl = document.querySelector('.support__list-js');
 const btnSwiperEl = document.querySelector('.swiper-button-next');
 
 let position = 0;
@@ -16,11 +16,11 @@ const markupSetFunds = fundArray
   .map((el, i) => {
     position = addLeadingZero(i + 1);
 
-    return FoundationItem(el, position);
+    return markupCardFund(el, position);
   })
   .join('');
 
-foundationListEl.innerHTML = markupSetFunds;
+supportListEl.innerHTML = markupSetFunds;
 
 const swiper = new Swiper('.swiper', {
   direction: 'vertical',
