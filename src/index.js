@@ -6,5 +6,5 @@ import './js/fetchBooks';
 import './js/category-list';
 import './js/allCategories';
 import './js/foundations';
-import './js/header';
+// import './js/header';
 // import './js/auth';

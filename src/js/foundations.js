@@ -1,7 +1,6 @@
-import { markupCardFund } from './foundations-markup';
 import { fundArray } from './fund-array';
+import { markupCardFund } from './foundations-markup';
 import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.min.css';
 
 const supportListEl = document.querySelector('.support__list-js');
 const btnSwiperEl = document.querySelector('.swiper-button-next');
