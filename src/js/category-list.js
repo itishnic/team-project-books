@@ -1,5 +1,5 @@
 import Notiflix from 'notiflix';
-import { fetchBooks } from '../js/fetchBooks';
+import { fetchBooks } from './fetchBooks';
 import { makeMarkupGategory, showAllCategories } from './allCategories';
 import { addEventListenerForBook } from './allCategories';
 import { addEventListenerForBook } from './allCategories';

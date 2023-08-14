@@ -3,7 +3,7 @@ import './js/fetchBooks';
 // import './js/auth-modal';
 // import './js/scroll-up';
 // import './js/darkTheme';
-import './js/books-by-category';
+import './js/category-list';
 import './js/allCategories';
 import './js/foundations';
 import './js/header';
