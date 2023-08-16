@@ -1,5 +1,5 @@
-import { fundArray } from './fund-array.js';
-import { markupCardFund } from './foundations-markup.js';
+import { fundArray } from './fund-array';
+import { markupCardFund } from './foundations-markup';
 import Swiper from 'swiper';
 
 const supportListEl = document.querySelector('.support__list-js');
@@ -23,8 +23,9 @@ supportListEl.innerHTML = markupSetFunds;
 
 const swiper = new Swiper('.swiper', {
   direction: 'vertical',
+  loop: true,
   spaceBetween: 20,
-  slidesPerView: 'auto',
+  slidesPerView: 4,
   rewind: true,
 
   navigation: {
@@ -32,8 +33,12 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-swiper.update();
-
 btnSwiperEl.addEventListener('click', () => {
-  swiper.slideNext();
+  if (swiper.activeIndex + swiper.loopedSlides + 1 > swiper.slides.length) {
+    swiper.slideToLoop(0);
+  } else {
+    swiper.slideNext();
+  }
 });
+
+swiper.update();
