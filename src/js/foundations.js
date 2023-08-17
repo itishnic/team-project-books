@@ -25,7 +25,7 @@ const swiper = new Swiper('.swiper', {
   direction: 'vertical',
   loop: true,
   spaceBetween: 20,
-  slidesPerView: 4,
+  slidesPerView: 6,
   rewind: true,
 
   navigation: {
