@@ -1,66 +1,32 @@
-// :root {
-//   --accent-color: #4f2ee8;
-//   --accent-color-dark-bg: #eac645;
+:root {
+  --accent-color: #4f2ee8;
+  --accent-color-dark-bg: #eac645;
 
-//   /* Fonts */
-//   --main-font: 'DM Sans', 'Open Sans', 'Roboto', 'Montserrat', sans-serif;
+  /* Fonts */
+  --main-font: 'DM Sans', 'Open Sans', 'Roboto', 'Montserrat', sans-serif;
 
-//   /* Text colors */
-//   --main-text-color: #111111;
-//   --main-text-color-dark-bg: #ffffff;
+  /* Text colors */
+  --main-text-color: #111111;
+  --main-text-color-dark-bg: #ffffff;
 
-//   --secondary-text-color: rgba(17, 17, 17, 0.6);
-//   --secondary-text-color-dark-bg: rgba(255, 255, 255, 0.6);
+  --secondary-text-color: rgba(17, 17, 17, 0.6);
+  --secondary-text-color-dark-bg: rgba(255, 255, 255, 0.6);
 
-//   --secondary-title-color: #b4afaf;
+  --secondary-title-color: #b4afaf;
 
-//   /* BG colors */
-//   --main-bg-color: #f6f6f6;
-//   --main-bg-color-dark-bg: #202024;
+  /* BG colors */
+  --main-bg-color: #f6f6f6;
+  --main-bg-color-dark-bg: #202024;
 
-//   --scroll-bar-bg-color: #e0e0e0;
-//   --scroll-bar-bg-color: rgba(17, 17, 17, 0.6);
+  --scroll-bar-bg-color: #e0e0e0;
+  --scroll-bar-bg-color: rgba(17, 17, 17, 0.6);
 
-//   /* Others */
+  /* Others */
 
-//   --indent-tablet-card: 25px;
-//   --indent-desktop-card: 24px;
-//   --items-tablet-card: 3;
-//   --items-desktop-card: 5;
-// }
+  --indent-tablet-card: 25px;
+  --indent-desktop-card: 24px;
+  --items-tablet-card: 3;
+  --items-desktop-card: 5;
+}
 
 // ///////////////////////////////////////////////////////////////@at-root
-
-$primary-background-color: #f6f6f6;
-$dark-color: #111111;
-$dark-transparent-color: rgba(
-  $color: #111111,
-  $alpha: 0.6,
-);
-$dark-gray-color: #202024;
-$white-gray-color: #f3f3f3;
-$text-gray-color: #b4afaf;
-$blue-color: #4f2ee8;
-$yellow-color: #eac645;
-$white-color: #ffffff;
-$radial-gradient: radial-gradient(
-  183.6% 183.01% at 59.76% -23.42%,
-  #4f2ee8 18.03%,
-  #ffffff 100%
-);
-$theme-switcher-linear-gradient: linear-gradient(
-  180deg,
-  #ffffff 0%,
-  #f7f7f7 100%
-);
-$white-theme-switcher-linear-gradient: linear-gradient(
-  180deg,
-  #4f2ee8 0%,
-  #dcdcdc 100%
-);
-$dark-theme-switcher-linear-gradient: linear-gradient(
-  180deg,
-  #4f2ee8 0%,
-  #686868 100%
-);
-$cubic-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -2,12 +2,12 @@
 
 @import './base/base';
 @import './base/common';
-// @import './base/reset';
+@import './base/reset';
 
 // components
 
 @import './components/container';
-@import './components/category-list';
+@import './components/categories';
 @import './components/main';
 @import './components/header';
 @import './components/foundations';
