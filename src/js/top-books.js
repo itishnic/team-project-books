@@ -1,7 +1,7 @@
 import { getTopBooks } from './get-top-books';
 import { createBookMarkup } from './create-book-markup';
-// import { createMessageMarkup } from './message-markup';
-// import showHideLoader from './loader';
+import { createMessageMarkup } from './message-markup';
+import showHideLoader from './loader';
 import { scrollToBookCategory } from './books-by-category';
 
 const booksSectionEl = document.querySelector('.books-section');

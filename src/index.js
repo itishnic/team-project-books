@@ -1,15 +1,5 @@
-import './js/fetchBooks';
+import './js/header';
 import './js/top-books';
 import './js/books-by-category';
-import './js/header';
-// import './js/modal';
-// import './js/auth-modal';
-// import './js/scroll-up';
-// import './js/darkTheme';
 import './js/category-list';
-// import './js/allCategories';
 import './js/foundations';
-// import './js/foundations-markup';
-import './js/charity-items';
-// import './js/header';
-// import './js/auth';

@@ -1,7 +1,7 @@
 import { getBooksByCategory } from './get-books-by-category';
 import { createBookMarkup } from './create-book-markup';
-// import { createMessageMarkup } from './message-markup';
-// import showHideLoader from './loader';
+import { createMessageMarkup } from './message-markup';
+import showHideLoader from './loader';
 
 const booksSectionEl = document.querySelector('.books-section');
 const mainEl = document.querySelector('main');
