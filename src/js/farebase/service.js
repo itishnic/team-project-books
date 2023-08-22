@@ -1,3 +1,9 @@
+i;
 import { initializeApp } from 'firebase/app';
-const firebaseApp = initializeApp({});
-const app = initializeApp(firebaseApp);
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+  //...
+};
+
+const app = initializeApp(firebaseConfig);
