@@ -1,9 +1,4 @@
-i;
 import { initializeApp } from 'firebase/app';
-
-// TODO: Replace the following with your app's Firebase project configuration
-const firebaseConfig = {
-  //...
-};
+import { firebaseConfig } from './config';
 
 const app = initializeApp(firebaseConfig);
