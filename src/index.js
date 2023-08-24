@@ -6,3 +6,4 @@ import './js/foundations';
 import './js/modals';
 import './js/scroll-up-btn';
 import './js/farebase/service';
+import './js/firebase-modal';
