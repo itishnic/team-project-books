@@ -1,4 +1,4 @@
-// import Pagination from 'tui-pagination';
+import Pagination from 'tui-pagination';
 import bookImg from '../images/shopping_list/not_fond_img@1x.png';
 import bookImgRetina from '../images/shopping_list/not_fond_img@2x.png';
 import sprite from '../images/icons.svg';
