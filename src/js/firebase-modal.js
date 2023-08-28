@@ -8,6 +8,7 @@ const logoutButtonMobileEl = document.querySelector(
 const submitModal = document.querySelector('.modal-form-button');
 
 const signupButtonEl = document.querySelector('button[data-modal="signup"]');
+
 const signupButtonModalEl = document.querySelector(
   'button[data-modal="signup-modal"]'
 );

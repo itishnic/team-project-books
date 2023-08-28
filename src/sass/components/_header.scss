@@ -19,10 +19,10 @@
 
 .header__logo-img {
   background: url('./../images/logo.svg');
-  width: 114px;
+  width: 110px;
   height: 28px;
   .dark & {
-    background: url('./../images/logo_big_dark.svg');
+    background: url('./../images/logo_dark.svg');
   }
 }
 
