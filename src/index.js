@@ -9,3 +9,4 @@ import './js/loader';
 import './js/farebase/service';
 import './js/firebase-modal';
 import './js/dark-theme';
+import './js/modile-menu';
